@@ -142,7 +142,7 @@ curl -X POST http://localhost:8083/auth/login \
 
 ### **3. Access Protected Endpoint (Update User Profile)**
 
-**Endpoint**: `PUT http://localhost:8083/users/update`
+**Endpoint**: `PUT http://localhost:8083/users/update/john_doe`
 
 **Headers**:
 
@@ -160,7 +160,7 @@ curl -X POST http://localhost:8083/auth/login \
 **Example using cURL**:
 
 ```bash
-curl -X PUT http://localhost:8083/users/update \
+curl -X PUT http://localhost:8083/users/update/john_doe \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"email": "new.email@example.com", "name": "John Doe Updated"}'
